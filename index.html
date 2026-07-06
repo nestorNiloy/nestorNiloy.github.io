@@ -9,6 +9,7 @@
         h1, h2, h3 { color: #111; }
         .project { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 20px; }
         .btn { display: inline-block; background: #0076ff; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .btn-live { display: inline-block; background: #28a745; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-left: 10px; }
     </style>
 </head>
 <body>
@@ -21,13 +22,26 @@
     <hr>
 
     <section>
-        <h2>🚀 Featured Project</h2>
+        <h2>🚀 Featured Projects</h2>
+        
+        <!-- Project 1: Transport Intelligence -->
         <div class="project">
             <h3>Smart Public Transport Intelligence Platform</h3>
-            <p><strong>What is it?</strong> A smart, real-time data dashboard that analyzes public transit efficiency and helps optimize schedules.</p>
-            <p><strong>Why I built it:</strong> I wanted to solve real-world commuting delays by tracking and visualizing public transit data to see exactly where bottlenecks happen.</p>
-            <p><strong>Tech Used:</strong> Python, Data Visualization, Git</p>
-            <a class="btn" href="https://github.com/nestorNiloy/transit-intel-platform" target="_blank">See the Code on GitHub</a>
+            <p><strong>What it is:</strong> A real-time data analytics backend and dashboard that optimizes transit efficiency and scores station reliability across 7 German states.</p>
+            <p><strong>The Impact:</strong> Exposes 11 REST endpoints, normalizes real-time Deutsche Bahn HAFAS API data, and features an auto-seeding 1,200-record historical matrix.</p>
+            <p><strong>Tech Used:</strong> Python, FastAPI, SQLAlchemy, SQLite, Jinja2, Chart.js, Railway</p>
+            <a class="btn" href="https://github.com/nestorNiloy/transit-intel-platform" target="_blank">Code on GitHub</a>
+            <a class="btn-live" href="https://transit-intel-platform-production.up.railway.app" target="_blank">Live Dashboard 🌐</a>
+        </div>
+
+        <!-- Project 2: ATM Transaction Dashboard -->
+        <div class="project">
+            <h3>ATM Transaction Dashboard</h3>
+            <p><strong>What it is:</strong> A full-stack analytics platform that processes, logs, and visualizes financial transactions and maintenance metrics for banking networks.</p>
+            <p><strong>The Impact:</strong> Engineered 8 RESTful endpoints to analyze 11,076 transactions across 2,790 ATMs in 11 states, tracking profit analytics and uptime monitoring.</p>
+            <p><strong>Tech Used:</strong> Python, Flask, Pandas, JavaScript, Chart.js, Render, GitHub Pages</p>
+            <a class="btn" href="https://github.com/nestorNiloy/atm-transaction-dashboard" target="_blank">Code on GitHub</a>
+            <a class="btn-live" href="https://nestorniloy.github.io/atm-transaction-dashboard/Web%20dashboard/atm-dashboard.html" target="_blank">Live Dashboard 🌐</a>
         </div>
     </section>
 
